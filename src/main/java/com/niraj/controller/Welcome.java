@@ -23,6 +23,12 @@ public class Welcome {
 		System.out.println("News Type in Request ==> " + type);
 		return "News Type "+ type;
 	}
-	
+
+	@GetMapping("/college/{t}")
+	public String college(@PathVariable("t") String college) {
+		System.out.println("College ==> " + college);
+		return "College =>  "+ college;
+	}
+
 }
 

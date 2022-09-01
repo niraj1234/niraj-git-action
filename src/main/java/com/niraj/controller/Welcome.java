@@ -29,6 +29,13 @@ public class Welcome {
 		System.out.println("College ==> " + college);
 		return "College =>  "+ college;
 	}
+	
+	@GetMapping("/aws/{w}")
+	public String amazon(@PathVariable("w") String aws) {
+		System.out.println("AWS Service ==> " + aws);
+		return "AWS Service =>  "+ aws;
+	}
+	
 
 }
 

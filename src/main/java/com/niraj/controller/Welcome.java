@@ -17,5 +17,12 @@ public class Welcome {
 		System.out.println("Site requested ==> " + site);
 		return "Your requested site "+ site;
 	}
+	
+	@GetMapping("/news/{t}")
+	public String newsType(@PathVariable("t") String type) {
+		System.out.println("News Type in Request ==> " + type);
+		return "News Type "+ type;
+	}
+	
 }
 

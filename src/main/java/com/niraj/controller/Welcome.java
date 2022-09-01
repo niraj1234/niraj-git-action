@@ -9,7 +9,7 @@ public class Welcome {
 
 	@GetMapping("/")
 	public String welcome() {
-		return "Github Actions - Niraj - 2";
+		return "Github Actions - Niraj - 3";
 	}
 
 	@GetMapping("/site/{s}")

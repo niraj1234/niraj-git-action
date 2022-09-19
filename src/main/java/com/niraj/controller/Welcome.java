@@ -36,6 +36,11 @@ public class Welcome {
 		return "AWS Service =>  "+ aws;
 	}
 	
+	@GetMapping("/cat/{c}")
+	public String myCat(@PathVariable("c") String c ) {
+		System.out.println("CAT name in path ==> " + c);
+		return "CAT name in path ==> " + c ;
+	}
 
 }
 

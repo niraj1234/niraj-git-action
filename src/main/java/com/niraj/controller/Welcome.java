@@ -42,5 +42,12 @@ public class Welcome {
 		return "CAT name in path ==> " + c ;
 	}
 
+	@GetMapping("/fleet/{c}")
+	public String freetManage(@PathVariable("c") String c ) {
+		System.out.println("Fleet to send ==> " + c);
+		return "Fleet to send ==> " + c ;
+	}
+
+
 }
 

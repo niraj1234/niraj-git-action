@@ -48,6 +48,12 @@ public class Welcome {
 		return "Fleet to send ==> " + c ;
 	}
 
+	@GetMapping("/heroku/{c}")
+	public String herokuApp(@PathVariable("c") String c ) {
+		System.out.println("Heroku to send ==> " + c);
+		return "Heroku to send ==> " + c ;
+	}
+
 
 }
 

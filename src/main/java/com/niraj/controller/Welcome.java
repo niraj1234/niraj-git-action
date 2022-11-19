@@ -54,6 +54,13 @@ public class Welcome {
 		return "Heroku to send ==> " + c ;
 	}
 
+	@GetMapping("/dell")
+	public String dellNewKeyboard() {
+		return "Dell New Keyboard";
+		
+	}
+	
+
 
 }
 

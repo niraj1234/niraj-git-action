@@ -24,11 +24,6 @@ public class Welcome {
 		return "News Type "+ type;
 	}
 
-	@GetMapping("/college/{t}")
-	public String college(@PathVariable("t") String college) {
-		System.out.println("College ==> " + college);
-		return "College =>  "+ college;
-	}
 	
 	@GetMapping("/aws/{w}")
 	public String amazon(@PathVariable("w") String aws) {
@@ -42,17 +37,6 @@ public class Welcome {
 		return "CAT name in path ==> " + c ;
 	}
 
-	@GetMapping("/fleet/{c}")
-	public String freetManage(@PathVariable("c") String c ) {
-		System.out.println("Fleet to send ==> " + c);
-		return "Fleet to send ==> " + c ;
-	}
-
-	@GetMapping("/heroku/{c}")
-	public String herokuApp(@PathVariable("c") String c ) {
-		System.out.println("Heroku to send ==> " + c);
-		return "Heroku to send ==> " + c ;
-	}
 
 	@GetMapping("/dell")
 	public String dellNewKeyboard() {

@@ -9,7 +9,7 @@ public class Welcome {
 
 	@GetMapping("/")
 	public String welcome() {
-		return "Github Actions - Niraj - 3";
+		return "Github Actions - Niraj - 3 | 06-01-2023 ";
 	}
 
 	@GetMapping("/site/{s}")
@@ -23,28 +23,6 @@ public class Welcome {
 		System.out.println("News Type in Request ==> " + type);
 		return "News Type "+ type;
 	}
-
-	
-	@GetMapping("/aws/{w}")
-	public String amazon(@PathVariable("w") String aws) {
-		System.out.println("AWS Service ==> " + aws);
-		return "AWS Service =>  "+ aws;
-	}
-	
-	@GetMapping("/cat/{c}")
-	public String myCat(@PathVariable("c") String c ) {
-		System.out.println("CAT name in path ==> " + c);
-		return "CAT name in path ==> " + c ;
-	}
-
-
-	@GetMapping("/dell")
-	public String dellNewKeyboard() {
-		return "Dell New Keyboard";
-		
-	}
-	
-
 
 }
 

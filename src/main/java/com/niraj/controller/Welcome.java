@@ -20,7 +20,7 @@ public class Welcome {
 	
 	@GetMapping("/news/{t}")
 	public String newsType(@PathVariable("t") String type) {
-		System.out.println("News Type in Request ==> " + type);
+		System.out.println("News Type in Request 222 ==> " + type);
 		return "News Type "+ type;
 	}
 

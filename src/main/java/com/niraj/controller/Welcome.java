@@ -27,7 +27,6 @@ public class Welcome {
 	@GetMapping("/product/{t}")
 	public String productType(@PathVariable("t") String type) {
 		System.out.println("Product Type for Ecommerce in Request ==> " + type);
-		System.out.println("Just after Docker repository delete");
 		return "Product Type "+ type;
 	}
 

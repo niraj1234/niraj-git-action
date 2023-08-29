@@ -24,5 +24,12 @@ public class Welcome {
 		return "News Type "+ type;
 	}
 
+	@GetMapping("/product/{t}")
+	public String productType(@PathVariable("t") String type) {
+		System.out.println("Product Type for Ecommerce in Request ==> " + type);
+		return "Product Type "+ type;
+	}
+
+
 }
 

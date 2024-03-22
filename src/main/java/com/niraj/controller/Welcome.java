@@ -9,7 +9,7 @@ public class Welcome {
 
 	@GetMapping("/")
 	public String welcome() {
-		return "Github Actions - Niraj - 5 | 20-09-2023 ";
+		return "Github Actions - Niraj - 6 | 22-04-2024 ";
 	}
 
 	@GetMapping("/site/{s}")
